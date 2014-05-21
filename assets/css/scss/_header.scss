@@ -1,0 +1,99 @@
+.main_header {
+	background-color: $dark;
+	height: 67px;
+	padding: 15px 10px 10px;
+	@include box-sizing(border);
+	.logo {
+		@extend .grid__item;
+		@extend .one-half;
+		@extend .tablet--one-quarter;
+		h1 {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			display: block;
+			width: 107px;
+			height: 42px;
+			background: url(../img/logo.png) 0 0 no-repeat;
+		}
+	}
+	.navigation {
+		@extend .grid__item;
+		@extend .one-half;
+		@extend .tablet--three-quarters;
+		// position: relative;
+		.trigger {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 65px;
+			height: 65px;
+			background: url(../img/icons/burger.png) center center no-repeat;
+			@include min-screen($desktop) {
+				display: none;
+			}
+		}
+		ul {
+			text-align: center;
+			float: right;
+			display: none;
+			background-color: $dark;
+			position: absolute;
+			top: 67px;
+			right: 0;
+			&.open {
+				display: block;
+			}
+			@include min-screen($desktop) {
+				margin: 0;
+				display: block;
+				position: relative;
+				top: auto;
+				right: auto;
+			}
+			li {
+				display: block;
+				@include min-screen($desktop) {
+					display: inline-block;
+				}
+				a {
+					display: block;
+					padding: 10px 2px 24px;
+					margin: 0 18px;
+					color: $gray;
+					text-decoration: none;
+					position: relative;
+					@include transition(300ms);
+					@include min-screen($desktop) {
+						&:after {
+							@include transition(300ms);
+							content: "";
+							display: block;
+							width: 5px;
+							height: 5px;
+							position: absolute;
+							left: 0;
+							right: 0;
+							margin: auto;
+							bottom: 100px;
+							background-color: $light-blue;
+							border-radius: 30px;
+						}
+						.no-touch & {
+							&:hover,
+							&:focus {
+								color: $white;
+								&:after {
+									bottom: 14px;
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -109,7 +109,7 @@ $pull:                  false!default;
  * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
  * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
  */
-$use-markup-fix:        true!default;
+$use-markup-fix:        false!default;
 
 
 /**
@@ -119,11 +119,8 @@ $use-markup-fix:        true!default;
  */
 
 $breakpoints: (
-    'phone-landscape' '(min-width: 30em)', // 480px
-    'tablet-portrait' '(min-width: 40em)', // 640px
-    'tablet-landscape' '(min-width: 64em)', // 1024px
-    'desktop' '(min-width: 80em)', // 1280px
-    'wide-desktop' '(min-width: 90em)' // 1440px
+    'tablet' '(min-width: 40em)', // 640px
+    'desktop' '(min-width: 64em)' // 1024px
 )!default;
 
 
@@ -137,9 +134,9 @@ $breakpoints: (
  * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
  * have been set to ‘true’.
  */
-$breakpoint-has-widths: ('phone-landscape', 'tablet-portrait', 'tablet-landscape', 'desktop', 'wide-desktop')!default;
-$breakpoint-has-push:   ('phone-landscape', 'tablet-portrait', 'tablet-landscape', 'desktop')!default;
-$breakpoint-has-pull:   ('phone-landscape', 'tablet-portrait', 'tablet-landscape', 'desktop')!default;
+$breakpoint-has-widths: ('tablet', 'desktop')!default;
+$breakpoint-has-push:   ('tablet', 'desktop')!default;
+$breakpoint-has-pull:   ('tablet', 'desktop')!default;
 
 
 /**
