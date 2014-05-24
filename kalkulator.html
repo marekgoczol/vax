@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/vendor/modernizr-2.8.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<header class="main_header">
+			<div class="wrapper">
+				<div class="grid">
+					<div class="logo">
+						<h1><a href="#" title="VAX"></a></h1>
+					</div>
+					<nav class="navigation jsNav">
+						<a href="#" class="trigger"></a>
+						<ul>
+							<li><a href="#">oferty</a></li>
+							<li><a href="#">aktualności</a></li>
+							<li><a href="#">kalkulator opłat</a></li>
+							<li><a href="#">wycena</a></li>
+							<li><a href="#">inwestowanie</a></li>
+							<li><a href="#">kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Kalkulator -->
+		<section class="calc wrapper">
+			<form action="#" class="form_1">
+				<div class="grid">
+					<div class="calc_main_form">
+						<h1><span class="ico_calc"></span> Kalkulator opłat</h1>
+						<small>Obliczenia przedstawiają przybliżone wartości rzeczywistych opłat.</small>
+						<h2 class="header_2"><strong>Forma własności</strong></h2>
+
+						<div class="field">
+							<input type="radio" name="forma" id="spoldzielcze">
+							<label for="spoldzielcze">Spółdzielcze własnościowe prawo do lokalu</label>
+						</div>
+						<div class="field subfield">
+							<input type="checkbox" name="wpis_do_ksiegi" id="wpis_do_ksiegi">
+							<label for="wpis_do_ksiegi">Z wpisem do księgi wieczystej</label>
+						</div>
+						<div class="field">
+							<input type="radio" name="forma" id="pelna_wlasnosc">
+							<label for="pelna_wlasnosc">Spółdzielcze własnościowe prawo do lokalu</label>
+						</div>
+
+						<h2 class="header_2"><strong>Cena nieruchomości</strong></h2>
+						<div class="field_item field_wide" data-after="zł">
+							<input type="text" id="cena" name="cena">
+						</div>
+						<div class="field_item">
+							<input type="submit" class="button_1" id="submit" name="submit" value="Wylicz opłaty">
+						</div>
+					</div>
+					<div class="calc_add_info">
+						<div class="form_2">
+							<div class="field">
+								<div class="label">
+									<label for="podatek">Podatek od czynności cywilnoprawnych:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="podatek" name="podatek">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="taksa">Taksa notarialna (maksymalna):</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="taksa" name="taksa">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="taksa_VAT">Podatek VAT od taksy notarialnej:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="taksa_VAT" name="taksa_VAT">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="oplata_sadowa">Opłata sądowa:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="oplata_sadowa" name="oplata_sadowa">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="oplata_wniosek">Opłata za wniosek wieczysto-księgowy:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="oplata_wniosek" name="oplata_wniosek">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="wpisy_z_aktu">Wpisy z aktu notarialnego:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="wpisy_z_aktu" name="wpisy_z_aktu">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="prowizja_biura">Wartość prowizji biura nieruchomości:</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="prowizja_biura" name="prowizja_biura">
+								</div>
+							</div>
+							<div class="field">
+								<div class="label">
+									<label for="prowizja_VAT">Podatek VAT od prowizji</label>
+								</div>
+								<div class="field_input">
+									<input type="text" id="prowizja_VAT" name="prowizja_VAT">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</section>
+		<!-- /Kalkulator -->
+
+		<footer class="footer">
+			<div class="footer_addresses copy">
+				<div class="wrapper">
+					<div class="grid">
+						<div class="footer_block">
+							<h3 class="header_1">Menu:</h3>
+							<ul class="footer_menu">
+								<li><a href="#">Oferty</a></li>
+								<li><a href="#">Aktualności</a></li>
+								<li><a href="#">Kalkulator opłat</a></li>
+								<li><a href="#">Wycena</a></li>
+								<li><a href="#">Inwestowanie</a></li>
+								<li><a href="#">Kontakt</a></li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Adres:</h3>
+							<div class="mb">
+								<p>ul. Karola Miarki 10 <br>Mikołów</p>
+								<p class="tel">(032) 738 43 43</p>
+							</div>
+							<div class="mb">
+								<h3 class="header_1">Godziny otwarcia</h3>
+								<p class="time">pon - pt: 9:00 - 18:00</p>
+							</div>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Gratisy:</h3>
+							<p>Paczka tapet na pulpit do pobrania na Twój komputer:</p>
+							<ul class="footer_menu">
+								<li>rozmiar 1024x768</li>
+								<li>rozmiar 1280x800</li>
+								<li>rozmiar 1280x1024</li>
+								<li>rozmiar 1600x1024</li>
+								<li>rozmiar 1920x1200</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Biuro obsługi klienta:</h3>
+							<p class="tel">0 81 881 555</p>
+							<p>
+							Infolinia czynna codziennie <br>
+							9:00 - 17:00
+							</p>
+							<p>oraz w pierwszą sobotę miesiąca <br>
+							10:00 - 13:00
+							</p>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Znajdź nas także na:</h3>
+							<div class="socials">
+								<a href="#" class="fb">Facebook</a>
+								<a href="#" class="google-plus">Google plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="wrapper">
+					<p>Copyright &copy; 2014, <span>Mikołów, VAX Nieruchomości </span></p>
+				</div>
+			</div>
+		</footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

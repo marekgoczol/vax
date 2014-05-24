@@ -8,7 +8,7 @@
 			@extend .tablet--one-half;
 			@extend .desktop--one-fifth;
 		}
-		.footer-menu {
+		.footer_menu {
 			list-style: none;
 			@include min-screen($desktop) {
 				list-style-type: disc;
@@ -86,6 +86,21 @@
 			@include hide-text();
 			&:hover {
 				@include opacity(100);
+			}
+		}
+	}
+
+	.footer_copyright {
+		background-color: $dark;
+		padding: 30px 0;
+		p {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			font-size: 13px;
+			color: #636262;
+			span {
+				color: #0a6f7b;
 			}
 		}
 	}

@@ -1,0 +1,52 @@
+.homepage_slider {
+	@extend .grid--full;
+	background-color: $light-blue;
+	@include min-screen($desktop) {
+		background: $light-blue url(../img/slider-bg.jpg) right 0 no-repeat;
+		background-size: 56% auto;
+		min-height: 386px;
+	}
+	.homepage_search {
+		padding: 30px 50px;
+		@include min-screen($desktop) {
+			padding: 30px 0;
+		}
+		@extend .grid__item;
+		@extend .one-whole;
+		@extend .desktop--two-fifths;
+	}
+	.slides {
+		@extend .grid__item;
+		@extend .one-whole;
+		@extend .desktop--three-fifths;
+		padding: 30px 50px;
+		@include min-screen($desktop) {
+			padding: 30px 0;
+		}
+		background: url(../img/slider-bg.jpg) 0 0 no-repeat;
+		background-size: cover;
+		@include min-screen($desktop) {
+			background: none;
+		}
+
+		h2 {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			color: $light-blue;
+			font-size: 43px;
+			font-weight: 400;
+			.ico {
+				display: inline-block;
+				width: 48px;
+				height: 48px;
+				background: url(../img/icons/ico-home.png) 0 0 no-repeat;
+				position: relative;
+				top: 10px;
+			}
+			strong {
+				text-transform: uppercase;
+			}
+		}
+	}
+}

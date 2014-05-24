@@ -1,0 +1,95 @@
+.form_1 {
+	margin-left: -12px;
+	label {
+		display: block;
+		margin-bottom: 4px;
+		font-size: 14px;
+		color: $white;
+	}
+	input[type=text] {
+		background-color: $input-blue;
+		border: 1px solid #cdf2f7;
+		margin: 0;
+		padding: 7px 30px 7px 10px;
+		width: 100%;
+		color: $white;
+		font-size: 13px;
+		@include box-sizing(border);
+		outline: none;
+		&:focus {
+			border: 1px solid $white;
+			outline: none;
+		}
+	}
+	.field {
+		padding-left: 12px;
+		margin-bottom: 10px;
+		&.subfield {
+			padding-left: 35px;
+		}
+	}
+	.mid-inputs {
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 13px;
+		color: $white;
+	}
+	.field_item {
+		display: inline-block;
+		margin-right: 12px;
+		width: 100px;
+		position: relative;
+		&.field_wide {
+			width: 130px;
+		}
+		&:after {
+			content: attr(data-after);
+			position: absolute;
+			right: 7px;
+			top: 8px;
+			font-size: 13px;
+			color: $white;
+		}
+	}
+}
+
+.form_2 {
+	width: 300px;
+	@include min-screen($tablet) {
+		width: 365px;
+	}
+	.field {
+		@extend .grid;
+		@extend .grid-full;
+		@extend .grid--middle;
+		margin-bottom: 12px;
+		.label {
+			@extend .grid__item;
+			@extend .one-whole;
+			@extend .tablet--three-fifths;
+			label {
+				color: $white;
+				font-size: 13px;
+			}
+		}
+		.field_input {
+			@extend .grid__item;
+			@extend .one-whole;
+			@extend .tablet--two-fifths;
+			position: relative;
+			input {
+				border: 1px solid #9a9a9a;
+				padding: 7px 10px;
+				background-color: #696969;
+			}
+			&:after {
+				content: "zł";
+				position: absolute;
+				right: -15px;
+				top: 10px;
+				color: $white;
+				font-size: 12px;
+			}
+		}
+	}
+}
