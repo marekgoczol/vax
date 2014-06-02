@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
         <script src="assets/js/vendor/modernizr-2.8.0.min.js"></script>
     </head>
     <body>
@@ -38,7 +40,7 @@
 		<!-- Kalkulator -->
 		<section class="calc wrapper">
 			<form action="#" class="form_1">
-				<div class="grid">
+				<div class="grid jsEqualCalc">
 					<div class="calc_main_form">
 						<h1><span class="ico_calc"></span> Kalkulator opłat</h1>
 						<small>Obliczenia przedstawiają przybliżone wartości rzeczywistych opłat.</small>
@@ -67,72 +69,88 @@
 					</div>
 					<div class="calc_add_info">
 						<div class="form_2">
-							<div class="field">
-								<div class="label">
-									<label for="podatek">Podatek od czynności cywilnoprawnych:</label>
+							<div class="inner">
+								<div class="field">
+									<div class="label">
+										<label for="podatek">Podatek od czynności cywilnoprawnych:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="podatek" name="podatek">
+									</div>
 								</div>
-								<div class="field_input">
-									<input type="text" id="podatek" name="podatek">
+								<div class="field">
+									<div class="label">
+										<label for="taksa">Taksa notarialna (maksymalna):</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="taksa" name="taksa">
+									</div>
 								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="taksa">Taksa notarialna (maksymalna):</label>
+								<div class="field">
+									<div class="label">
+										<label for="taksa_VAT">Podatek VAT od taksy notarialnej:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="taksa_VAT" name="taksa_VAT">
+									</div>
 								</div>
-								<div class="field_input">
-									<input type="text" id="taksa" name="taksa">
+								<div class="field">
+									<div class="label">
+										<label for="oplata_sadowa">Opłata sądowa:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="oplata_sadowa" name="oplata_sadowa">
+									</div>
 								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="taksa_VAT">Podatek VAT od taksy notarialnej:</label>
+								<div class="field">
+									<div class="label">
+										<label for="oplata_wniosek">Opłata za wniosek wieczysto-księgowy:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="oplata_wniosek" name="oplata_wniosek">
+									</div>
 								</div>
-								<div class="field_input">
-									<input type="text" id="taksa_VAT" name="taksa_VAT">
+								<div class="field">
+									<div class="label">
+										<label for="wpisy_z_aktu">Wpisy z aktu notarialnego:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="wpisy_z_aktu" name="wpisy_z_aktu">
+									</div>
 								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="oplata_sadowa">Opłata sądowa:</label>
+								<div class="field">
+									<div class="label">
+										<label for="prowizja_biura">Wartość prowizji biura nieruchomości:</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="prowizja_biura" name="prowizja_biura">
+									</div>
 								</div>
-								<div class="field_input">
-									<input type="text" id="oplata_sadowa" name="oplata_sadowa">
-								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="oplata_wniosek">Opłata za wniosek wieczysto-księgowy:</label>
-								</div>
-								<div class="field_input">
-									<input type="text" id="oplata_wniosek" name="oplata_wniosek">
-								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="wpisy_z_aktu">Wpisy z aktu notarialnego:</label>
-								</div>
-								<div class="field_input">
-									<input type="text" id="wpisy_z_aktu" name="wpisy_z_aktu">
-								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="prowizja_biura">Wartość prowizji biura nieruchomości:</label>
-								</div>
-								<div class="field_input">
-									<input type="text" id="prowizja_biura" name="prowizja_biura">
-								</div>
-							</div>
-							<div class="field">
-								<div class="label">
-									<label for="prowizja_VAT">Podatek VAT od prowizji</label>
-								</div>
-								<div class="field_input">
-									<input type="text" id="prowizja_VAT" name="prowizja_VAT">
+								<div class="field">
+									<div class="label">
+										<label for="prowizja_VAT">Podatek VAT od prowizji</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="prowizja_VAT" name="prowizja_VAT">
+									</div>
 								</div>
 							</div>
 						</div>
-
+						<div class="form_2 form_sum">
+							<div class="inner">
+								<div class="field">
+									<div class="label">
+										<label for="dodatkowe_oplaty">W sumie opłaty dodatkowe</label>
+									</div>
+									<div class="field_input">
+										<input type="text" id="dodatkowe_oplaty" name="dodatkowe_oplaty">
+									</div>
+								</div>
+								<div class="summary">
+									<p>Suma opłat: <strong>359 000 zł</strong></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</form>

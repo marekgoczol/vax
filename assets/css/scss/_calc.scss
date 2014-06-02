@@ -1,4 +1,5 @@
 .calc {
+	margin: 15px auto;
 	.calc_main_form {
 		@extend .grid__item;
 		@extend .one-whole;
@@ -19,6 +20,9 @@
 			margin-top: 25px;
 			margin-bottom: 10px;
 			font-size: 25px;
+			@include min-screen($desktop) {
+				margin-bottom: 60px;
+			}
 			strong {
 				font-size: 25px;
 			}
@@ -41,7 +45,35 @@
 		@extend .grid__item;
 		@extend .one-whole;
 		@extend .desktop--three-fifths;
+		padding-left: 0;
+		padding-top: 30px;
 		background-color: $footer-gray;
+	}
+	.form_sum {
+		background-color: #232323;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.summary {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			text-align: right;
+			@include min-screen($desktop) {
+				position: relative;
+				right: -140px;
+			}
+			p {
+				margin: 0;
+				padding: 0;
+				color: $white;
+				line-height: 1;
+			}
+			strong {
+				margin-left: 10px;
+				color: $light-blue;
+				font-size: 30px;
+				font-weight: 700;
+			}
+		}
 	}
 	.ico_calc {
 		display: inline-block;

@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
         <script src="assets/js/vendor/modernizr-2.8.0.min.js"></script>
     </head>
     <body>
@@ -39,8 +41,28 @@
 			<div class="wrapper">
 				<div class="grid">
 					<div class="homepage_search">
-						<h1 class="header-2"><b>Szukaj</b> spośród <strong>262 895</strong> ofert:</h1>
-						<div class="form_1">
+						<h1 class="header_2"><b>Szukaj</b> spośród <strong>262 895</strong> ofert:</h1>
+						<form class="form_1">
+							<div class="field">
+								<div class="field_item no_spacing field_extra_wide">
+									<input name="klucz" id="klucz" type="text" placeholder="np. miejscowość, dzielnica, ulica">
+								</div>
+								<div class="dropdown">
+									<select name="rodzaj" id="rodzaj" class="jsDropdown">
+										<option value="mieszkanie">mieszkanie</option>
+										<option value="dzialka">dzialka</option>
+										<option value="dom">dom</option>
+										<option value="pokoj">pokój</option>
+										<option value="lokal">lokal użytkowy</option>
+									</select>
+								</div>
+								<div class="dropdown">
+									<select name="transakcja" id="transakcja" class="jsDropdown">
+										<option value="wynajem">wynajem</option>
+										<option value="sprzedaz">sprzedaż</option>
+									</select>
+								</div>
+							</div>
 							<div class="field">
 								<label>Cena</label>
 								<div class="field_item" data-after="zł">
@@ -71,10 +93,60 @@
 									<input type="text">
 								</div>
 							</div>
-						</div>
+							<div class="field submit">
+								<input type="submit" name="submit" id="submit" value="Wyszukaj">
+							</div>
+						</form>
 					</div>
 					<div class="slides">
 						<h2><span class="ico"></span> Skuteczna sprzedaż <strong>nieruchomości</strong></h2>
+
+						<div class="carousel jsCarousel">
+							<div class="grid">
+								<div class="grid__item tablet--one-half">
+									<img src="/assets/img/carousel-1.png" alt="Slide 1">
+								</div>
+								<div class="grid__item tablet--one-half">
+									<h3>Lorem ipsum dolor sit amet.</h3>
+									<ul>
+										<li>Sprzedaż, kupno, wynajem nieruchomości</li>
+										<li>Profesjonalni i doświadczeni agenci</li>
+										<li>Współpraca z najlepszymi biurami notarialnymi, rzeczoznawcami oraz bankami udzielającymi kredyty mieszkaniowe</li>
+									</ul>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="grid__item tablet--one-half">
+									<img src="/assets/img/carousel-2.png" alt="Slide 1">
+								</div>
+								<div class="grid__item tablet--one-half">
+									<h3>Lorem ipsum dolor sit amet.</h3>
+									<ul>
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus!</li>
+										<li>Profesjonalni i doświadczeni agenci</li>
+										<li>Współpraca z najlepszymi biurami notarialnymi, rzeczoznawcami oraz bankami udzielającymi kredyty mieszkaniowe</li>
+									</ul>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="grid__item tablet--one-half">
+									<img src="/assets/img/carousel-2.png" alt="Slide 1">
+								</div>
+								<div class="grid__item tablet--one-half">
+									<h3>Lorem ipsum dolor sit amet.</h3>
+									<ul>
+										<li>Sprzedaż, kupno, wynajem nieruchomości</li>
+										<li>Lorem ipsum dolor sit.</li>
+										<li>Współpraca z najlepszymi biurami notarialnymi, rzeczoznawcami oraz bankami udzielającymi kredyty mieszkaniowe</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="slider-nav">
+							<span class="prev"></span>
+							<div class="jsPager pager"></div>
+							<span class="next"></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -201,6 +273,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="assets/js/vendor/jquery.cycle2.min.js"></script>
+        <script src="assets/js/vendor/jquery.selectbox-0.2.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

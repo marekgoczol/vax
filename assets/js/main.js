@@ -6,7 +6,8 @@ $(function(){
 	Vax.VARS = {
 		NAV: $('.jsNav'),
 		HOME_CAROUSEL: $('.jsCarousel'),
-		DROPDOWN: $('.jsDropdown')
+		DROPDOWN: $('.jsDropdown'),
+		CALC_GRID: $('.jsEqualCalc>div')
 	};
 
 	Vax.navigation = function($elem) {
@@ -39,6 +40,26 @@ $(function(){
 		});
 	};
 
+	Vax.equalHeight = function($elem){
+		var $boxes = $elem,
+			boxesHeights = [],
+			equalHeight;
+
+		// get boxes heights
+		$boxes.css({height:''});
+		$boxes.each(function () {
+			boxesHeights.push($(this).outerHeight());
+		});
+
+		equalHeight = Math.max.apply(Math, boxesHeights);
+		// set boxes height to the value of the talles box
+		if (equalHeight > 0) {
+			$boxes.each(function () {
+				$(this).css("height", equalHeight);
+			});
+		}
+	};
+
 	Vax.init = function() {
 		var $window = $(window);
 
@@ -50,6 +71,12 @@ $(function(){
         }
         if(this.VARS.DROPDOWN.length) {
         	this.dropdown(this.VARS.DROPDOWN);
+        }
+        if(this.VARS.CALC_GRID.length) {
+        	setTimeout(function(){
+        		Vax.equalHeight(Vax.VARS.CALC_GRID);
+        	},300);
+
         }
 
 	};

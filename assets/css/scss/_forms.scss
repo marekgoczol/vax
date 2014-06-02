@@ -89,9 +89,12 @@
 }
 
 .form_2 {
-	width: 300px;
-	@include min-screen($tablet) {
-		width: 365px;
+	padding-left: 33px;
+	.inner {
+		width: 405px;
+		@include min-screen($tablet) {
+			width: 365px;
+		}
 	}
 	.field {
 		@extend .grid;
