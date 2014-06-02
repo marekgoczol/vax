@@ -49,4 +49,66 @@
 			}
 		}
 	}
+
+	.carousel {
+		@include min-screen($desktop) {
+			margin-left: -100px;
+		}
+
+		h3 {
+			font-size: 25px;
+			color: $white;
+			margin-bottom: 20px;
+		}
+		ul {
+			list-style-type: disc;
+			padding: 0 0 0 20px;
+			li {
+				margin-bottom: 12px;
+				font-size: 16px;
+				color: $white;
+			}
+		}
+	}
+	.slider-nav {
+		margin-top: 20px;
+		@include min-screen($desktop) {
+			margin-top: 0;
+			margin-left: 250px;
+		}
+	}
+	.pager {
+		display: inline-block;
+
+		span {
+			display: inline-block;
+			margin: 0 4px;
+			width: 10px;
+			height: 10px;
+			background-image: url(../img/icons/ico-bullets.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			@include hide-text();
+			vertical-align: top;
+			&.cycle-pager-active {
+				background-position: 0 bottom;
+			}
+		}
+	}
+	.next,
+	.prev {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+	}
+	.next {
+		background-image: url(../img/icons/ico-arrow-right.png);
+	}
+	.prev {
+		background-image: url(../img/icons/ico-arrow-left.png);
+	}
+	.pager {
+
+	}
 }
