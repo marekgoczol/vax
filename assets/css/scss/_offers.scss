@@ -1,6 +1,6 @@
 .offers {
 	> .grid {
-		@extend .grid--full;
+		@extend .grid--narrow;
 	}
 	.single_offer {
 		@extend .grid__item;
@@ -9,6 +9,10 @@
 		@extend .desktop--one-fifth;
 		position: relative;
 		margin: 12px 0;
+		> a {
+			display: block;
+			position: relative;
+		}
 		img {
 			display: block;
 			width: 100%;
@@ -40,8 +44,8 @@
 			}
 			.ico {
 				position: absolute;
-				left: 10px;
-				top: 10px;
+				left: 5px;
+				top: 5px;
 			}
 		}
 		.no-touch & {
@@ -65,6 +69,8 @@
 			color: $light-blue;
 			text-align: right;
 			text-transform: uppercase;
+			position: relative;
+			z-index: 10;
 			@include transition(300ms);
 			@include box-sizing(border);
 			span {

@@ -1,0 +1,68 @@
+.contact {
+	> .grid {
+		@extend .grid--full;
+	}
+	margin-top: 10px;
+	margin-bottom: 10px;
+	.contact_info {
+		@extend .grid__item;
+		@extend .two-fifths;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		min-height: 700px;
+		background-color: $light-blue;
+
+		.contact_content {
+			padding-left: 50px;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0 0 0 50px;
+			font-size: 35px;
+			color: $white;
+			background: url(../img/icons/ico-contact-white.png) left top no-repeat;
+			min-height: 45px;
+		}
+		h2 {
+			margin: 12px 0 0 0;
+			padding: 0;
+			font-size: 15px;
+			font-weight: 400;
+			color: $white;
+			text-transform: uppercase;
+		}
+		p {
+			margin: 0 0 12px 0;
+			font-size: 15px;
+			font-weight: 300;
+			color: $white;
+			&.inline {
+				margin: 0;
+			}
+			&.tel {
+				padding-left: 20px;
+				margin-left: -20px;
+				background: url(../img/icons/ico-phone-white.png) left 4px no-repeat;
+			}
+			&.time {
+				padding-left: 20px;
+				margin-left: -20px;
+				background: url(../img/icons/ico-time-white.png) left 2px no-repeat;
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.map {
+		@extend .grid__item;
+		@extend .three-fifths;
+	}
+}

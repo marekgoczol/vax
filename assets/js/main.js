@@ -7,7 +7,9 @@ $(function(){
 		NAV: $('.jsNav'),
 		HOME_CAROUSEL: $('.jsCarousel'),
 		DROPDOWN: $('.jsDropdown'),
-		CALC_GRID: $('.jsEqualCalc>div')
+		CALC_GRID: $('.jsEqualCalc>div'),
+		COLLAPSABLE_GROUP: $('.jsCollapsable'),
+		CHECKBOX: $('.jsCheckbox')
 	};
 
 	Vax.navigation = function($elem) {
@@ -32,7 +34,6 @@ $(function(){
 	Vax.dropdown = function($elem) {
 		$elem.each(function(i,v){
 			var $this = $(v);
-			console.log($this);
 
 			$this.selectbox({
 				effect: "fade"
@@ -60,6 +61,31 @@ $(function(){
 		}
 	};
 
+	Vax.collapse = function($elem) {
+
+		$elem.each(function(i,v){
+			var $this = $(v),
+				$group = $this.find('>.form_items'),
+				$header = $this.find('.heading');
+
+			$header.on('click', function(e){
+				console.log('sads');
+				e.preventDefault();
+				if($this.hasClass('collapsed')) {
+					$this.removeClass('collapsed');
+					$group.slideDown(300);
+				} else {
+					$this.addClass('collapsed');
+					$group.slideUp(300);
+				}
+			});
+		});
+	};
+
+	Vax.checkbox = function($elem) {
+		$elem.uniform();
+	}
+
 	Vax.init = function() {
 		var $window = $(window);
 
@@ -77,6 +103,12 @@ $(function(){
         		Vax.equalHeight(Vax.VARS.CALC_GRID);
         	},300);
 
+        }
+        if(this.VARS.COLLAPSABLE_GROUP.length) {
+        	this.collapse(this.VARS.COLLAPSABLE_GROUP);
+        }
+        if(this.VARS.CHECKBOX.length) {
+        	this.checkbox(this.VARS.CHECKBOX);
         }
 
 	};

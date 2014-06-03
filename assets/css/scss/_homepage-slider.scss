@@ -51,6 +51,7 @@
 	}
 
 	.carousel {
+		margin-top: 15px;
 		@include min-screen($desktop) {
 			margin-left: -100px;
 		}
@@ -107,8 +108,5 @@
 	}
 	.prev {
 		background-image: url(../img/icons/ico-arrow-left.png);
-	}
-	.pager {
-
 	}
 }

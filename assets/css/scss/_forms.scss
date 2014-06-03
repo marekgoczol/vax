@@ -43,8 +43,49 @@
 			padding-left: 35px;
 		}
 		&.submit {
-			margin-left: 143px;
 			margin-top: 30px;
+			&.pull_left {
+				margin-left: 143px;
+			}
+		}
+	}
+	.group {
+		.heading {
+			display: block;
+			margin: 25px 0 10px 12px;
+			font-size: 20px;
+			font-weight: 700;
+			color: $white;
+			position: relative;
+			cursor: pointer;
+			&:after {
+				display: block;
+				width: 14px;
+				height: 10px;
+				background: url(../img/icons/ico-collapse.png);
+				background-position:  0 top;
+				background-repeat: no-repeat;
+				position: absolute;
+				right: 0;
+				top: 7px;
+				content: "";
+				@include transition(300ms);
+			}
+		}
+		&.collapsed {
+			.heading:after {
+				background-position: 0 -20px;
+			}
+		}
+	}
+	.checkboxes {
+		.checkbox {
+			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+		label {
+			display: inline-block;
 		}
 	}
 	.mid-inputs {
@@ -52,6 +93,10 @@
 		margin-right: 10px;
 		font-size: 13px;
 		color: $white;
+		&.bottom {
+			position: relative;
+			top: 10px;
+		}
 	}
 	.field_item {
 		display: inline-block;
@@ -63,10 +108,13 @@
 			width: 130px;
 		}
 		&.field_extra_wide {
-			width: 185px;
+			width: 175px;
 			input {
 				padding-right: 10px;
 			}
+		}
+		&.full {
+			width: 100%;
 		}
 		&.no_spacing {
 			margin-right: -4px;
@@ -83,8 +131,27 @@
 
 	.dropdown {
 		display: inline-block;
-		width: 95px;
+		width: 75px;
 		vertical-align: middle;
+		&.full {
+			display: block;
+			width: 100%;
+			@include box-sizing(border);
+			.sbHolder {
+				width: 100%;
+			}
+		}
+		&.half {
+			display: inline-block;
+			width: 130px;
+			@include box-sizing(border);
+			.sbHolder {
+				width: 100%;
+			}
+		}
+		&.right_space {
+			margin-right: 12px;
+		}
 	}
 }
 
@@ -131,3 +198,5 @@
 		}
 	}
 }
+
+

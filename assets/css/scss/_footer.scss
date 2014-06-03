@@ -99,8 +99,13 @@
 			text-align: right;
 			font-size: 13px;
 			color: #636262;
-			span {
+			span,
+			a {
 				color: #0a6f7b;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
 			}
 		}
 	}

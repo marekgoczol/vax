@@ -1,0 +1,200 @@
+// globals
+.offers_heading {
+	background: url(../img/icons/ico-home.png) left top no-repeat;
+	padding-left: 60px;
+	min-height: 60px;
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 25px;
+		color: $light-blue;
+		font-weight: 400;
+		line-height: 1;
+	}
+	small {
+		display: block;
+		color: $light-gray;
+		font-size: 14px;
+	}
+}
+.offer_desc {
+	@extend .grid__item;
+	@extend .tablet--two-thirds;
+
+	.info & {
+		@extend .one-whole;
+	}
+
+	h2 {
+		margin: 0 0 6px;
+		font-size: 20px;
+		font-weight: 700;
+		color: $footer-gray;
+	}
+	.attrs {
+		span {
+			display: block;
+			@include min-screen($desktop) {
+				display: inline-block;
+			}
+		}
+		small {
+			font-size: 14px;
+		}
+		.price {
+			font-size: 25px;
+			font-weight: 700;
+			color: $light-blue;
+			margin-right: 40px;
+		}
+		.dimm {
+			font-size: 20px;
+			font-weight: 700;
+			color: $light-gray;
+		}
+		.ground {
+			margin: 5px 0 0 0;
+			font-size: 20px;
+			font-weight: 700;
+			color: $light-gray;
+			@include min-screen($tablet) {
+				float: right;
+			}
+		}
+		em {
+			font-size: 10px;
+			position: relative;
+			top: -8px;
+			font-style: normal;
+		}
+	}
+}
+// /globals
+
+
+.offers_list {
+	margin-top: 12px;
+	.search_box {
+		@extend .grid__item;
+		@extend .tablet--two-fifths;
+		background-color: $light-blue;
+
+		.content {
+			padding: 15px 20px 15px 0;
+		}
+
+		h2 {
+			font-size: 20px;
+			font-weight: 400;
+			color: $white;
+			margin: 0 0 15px;
+			padding: 0;
+			strong {
+				font-weight: 700;
+				font-size: 32px;
+			}
+		}
+	}
+
+	.filtered_offers {
+		@extend .grid__item;
+		@extend .tablet--three-fifths;
+
+
+
+
+		.offer {
+			margin-bottom: 35px;
+			.offer_pic {
+				@extend .grid__item;
+				@extend .tablet--one-third;
+				a {
+					display: block;
+					position: relative;
+				}
+				.reserved {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: #03c0d6;
+					background-color: rgba(3, 192,214, .67);
+					> .text {
+						position: absolute;
+						max-height: 50px;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						margin: auto;
+						color: $white;
+						font-size: 20px;
+						text-align: center;
+						text-transform: uppercase;
+
+					}
+				}
+				.read_more {
+					display: block;
+					width: 100%;
+					height: 35px;
+					padding: 9px;
+					background: #434343;
+					font-size: 13px;
+					font-weight: 700;
+					color: $light-blue;
+					text-align: right;
+					text-transform: uppercase;
+					z-index: 10;
+					position: relative;
+					@include transition(300ms);
+					@include box-sizing(border);
+					span {
+						display: inline-block;
+						padding-left: 20px;
+						background: url(../img/icons/ico-arrow.png) left center no-repeat;
+					}
+				}
+			}
+
+		}
+	}
+
+	.pagination {
+		margin: 10px 0 20px;
+		ul {
+			text-align: right;
+			li {
+				display: inline-block;
+				&.prev,
+				&.next {
+					width: 18px;
+					height: 18px;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				&.prev {
+					background: url(../img/icons/ico-p-left.png) 0 0 no-repeat;
+				}
+				&.next {
+					background: url(../img/icons/ico-p-right.png) 0 0 no-repeat;
+				}
+
+				a {
+					padding: 2px;
+					font-size: 13px;
+					color: $light-gray;
+					&:hover {
+						color: $black;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+

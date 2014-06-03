@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+        <script src="assets/js/vendor/modernizr-2.8.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<header class="main_header">
+			<div class="wrapper">
+				<div class="grid">
+					<div class="logo">
+						<h1><a href="#" title="VAX"></a></h1>
+					</div>
+					<nav class="navigation jsNav">
+						<a href="#" class="trigger"></a>
+						<ul>
+							<li><a href="#">oferty</a></li>
+							<li><a href="#">aktualności</a></li>
+							<li><a href="#">kalkulator opłat</a></li>
+							<li><a href="#">wycena</a></li>
+							<li><a href="#">inwestowanie</a></li>
+							<li><a href="#">kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Oferty -->
+		<section class="offers_list wrapper">
+			<div class="grid">
+				<div class="search_box">
+					<div class="content">
+						<h2><strong>Szukaj</strong> spośród <strong>262 895</strong> ofert:</h2>
+
+						<!-- form -->
+						<form class="form_1">
+							<div class="field">
+								<label for="">Lokalizacja</label>
+							</div>
+							<div class="field">
+
+								<div class="field_item no_spacing field_extra_wide">
+
+									<input name="klucz" id="klucz" type="text" placeholder="np. miejscowość, dzielnica, ulica">
+								</div>
+								<div class="dropdown">
+									<select name="rodzaj" id="rodzaj" class="jsDropdown">
+										<option value="mieszkanie">mieszkanie</option>
+										<option value="dzialka">dzialka</option>
+										<option value="dom">dom</option>
+										<option value="pokoj">pokój</option>
+										<option value="lokal">lokal użytkowy</option>
+									</select>
+								</div>
+								<div class="dropdown">
+									<select name="transakcja" id="transakcja" class="jsDropdown">
+										<option value="wynajem">wynajem</option>
+										<option value="sprzedaz">sprzedaż</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+							</div>
+
+							<div class="group jsCollapsable">
+								<h3 class="heading">Lokalizacja</h3>
+								<div class="form_items">
+									<div class="field">
+										<div class="dropdown full">
+											<label for="wojewodztwo">Województwo</label>
+											<select name="wojewodztwo" id="wojewodztwo" class="jsDropdown">
+												<option value="slaskie">slaskie</option>
+												<option value="mazowieckie">mazowieckie</option>
+											</select>
+										</div>
+									</div>
+									<div class="field">
+										<div class="dropdown full">
+											<label for="miejscowosc">Miejscowość</label>
+											<select name="miejscowosc" id="miejscowosc" class="jsDropdown">
+												<option value="mikolow">Mikołów</option>
+												<option value="piekary">Piekary Śląskie</option>
+											</select>
+										</div>
+									</div>
+									<div class="field">
+										<label for="dzielnica">Dzielnica</label>
+										<div class="field_item full">
+											<input type="text" name="dzielnica" id="dzielnica">
+										</div>
+									</div>
+									<div class="field">
+										<label for="ulica">Ulica</label>
+										<div class="field_item full">
+											<input type="text" name="ulica" id="ulica">
+										</div>
+									</div>
+									<div class="field">
+										<div class="dropdown half">
+											<label for="km">km od centrum</label>
+											<select name="km" id="km" class="jsDropdown">
+												<option value="centrum">centrum</option>
+												<option value="5">5 km</option>
+												<option value="10">10 km</option>
+												<option value="50">50km</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="group jsCollapsable">
+								<h3 class="heading">Cena</h3>
+								<div class="form_items">
+									<div class="field">
+										<label for="cena_od">Cena całkowita</label>
+										<div class="field_item field_wide" data-after="zł">
+											<input type="text" name="cena_od" id="cena_od">
+										</div>
+										<span class="mid-inputs">do</span>
+										<div class="field_item field_wide" data-after="zł">
+											<input type="text" name="cena_do" id="cena_do">
+										</div>
+									</div>
+									<div class="field">
+										<label for="cena_od_m2">Cena za m2</label>
+										<div class="field_item field_wide" data-after="zł">
+											<input type="text" name="cena_od_m2" id="cena_od_m2">
+										</div>
+										<span class="mid-inputs">do</span>
+										<div class="field_item field_wide" data-after="zł">
+											<input type="text" name="cena_do_m2" id="cena_do_m2">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="group jsCollapsable">
+								<h3 class="heading">Cechy mieszkania</h3>
+								<div class="form_items">
+									<div class="field">
+										<label for="powierzchnia_od">Powierzchnia</label>
+										<div class="field_item field_wide" data-after="m2">
+											<input type="text" name="powierzchnia_od" id="powierzchnia_od">
+										</div>
+										<span class="mid-inputs">do</span>
+										<div class="field_item field_wide" data-after="m2">
+											<input type="text" name="powierzchnia_do" id="powierzchnia_do">
+										</div>
+									</div>
+									<div class="field">
+										<label for="liczba_pokoi_od">Liczba pokoi</label>
+										<div class="field_item field_wide" data-after="m2">
+											<input type="text" name="liczba_pokoi_od" id="liczba_pokoi_od">
+										</div>
+										<span class="mid-inputs">do</span>
+										<div class="field_item field_wide" data-after="m2">
+											<input type="text" name="liczba_pokoi_do" id="liczba_pokoi_do">
+										</div>
+									</div>
+									<div class="field">
+										<div class="dropdown half right_space">
+											<label for="km">Piętro</label>
+											<select name="km" id="km" class="jsDropdown">
+												<option value="p0">parter</option>
+												<option value="p1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<span class="mid-inputs bottom">do</span>
+										<div class="dropdown half">
+											<label for="km">&nbsp;</label>
+											<select name="km" id="km" class="jsDropdown">
+												<option value="p0">parter</option>
+												<option value="p1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="group jsCollapsable">
+								<h3 class="heading">Szczegóły ogłoszenia</h3>
+								<div class="form_items">
+									<div class="field">
+										<label>Rynek</label>
+										<div class="checkboxes">
+											<div class="checkbox">
+												<input type="checkbox" class="jsCheckbox" name="pierwotny" id="pierwotny">
+												<label for="pierwotny">pierwotny</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" class="jsCheckbox" name="wtorny" id="wtorny">
+												<label for="wtorny">wtórny</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" class="jsCheckbox" name="wt-pierw" id="wt-pierw">
+												<label for="wt-pierw">wtórny i pierwotny</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" class="jsCheckbox" name="zdjecia" id="zdjecia">
+												<label for="zdjecia">tylko ze zdjęciem</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" class="jsCheckbox" name="bezposrednie" id="bezposrednie">
+												<label for="bezposrednie">tylko bezpośrednie</label>
+											</div>
+										</div>
+									</div>
+									<div class="field">
+										<div class="dropdown half right_space">
+											<label for="aktualnosc">Aktualność ogłoszenia</label>
+											<select name="aktualnosc" id="aktualnosc" class="jsDropdown">
+												<option value="dowolna">dowolna</option>
+												<option value="rezerwacja">rezerwacja</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="field submit">
+								<input type="submit" name="submit" id="submit" value="Wyszukaj">
+							</div>
+						</form>
+						<!-- /form -->
+
+					</div>
+				</div>
+				<div class="filtered_offers">
+					<div class="offers_heading">
+						<h1>Mieszkania na sprzedaż, <strong>Mikołów</strong></h1>
+						<small>(woj. śląskie, powiat mikołowski</small>
+					</div>
+
+					<!-- pagination -->
+					<div class="pagination">
+						<ul>
+							<li class="prev"><a href="#"></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next"><a href="#"></a></li>
+						</ul>
+					</div>
+					<!-- /pagination -->
+
+					<!-- offers -->
+					<div class="offer grid">
+						<div class="offer_pic">
+							<a href="#">
+								<img src="/assets/img/oferta.jpg" alt="Oferta">
+								<div class="read_more">
+									<span>Czytaj więcej</span>
+								</div>
+							</a>
+						</div>
+						<div class="offer_desc">
+							<h2>Mikołów, ul Okrzei</h2>
+							<div class="attrs">
+								<span class="price">210 000 zł</span>
+								<span class="dimm">96 m<em>2</em></span>
+								<span class="ground">2187 m<em>2</em></span>
+							</div>
+							<p>3 pokoje, piętro 4 z 4, blok, balkon, piwnica</p>
+							<p>Sed sit amet mattis purus. Donec consectetur sem nibh, vestibulum interdum neque ultrices vel. Morbi vehicula vestibulum quam, a laoreet lectus vehicula eget. Nam vel consectetur augue. Mauris fringilla, nulla vel euismod sodales</p>
+						</div>
+					</div>
+
+					<div class="offer grid">
+						<div class="offer_pic">
+							<a href="#">
+								<span class="reserved">
+									<span class="text">Rezerwacja</span>
+								</span>
+								<img src="/assets/img/oferta.jpg" alt="Oferta">
+								<div class="read_more">
+									<span>Czytaj więcej</span>
+								</div>
+							</a>
+						</div>
+						<div class="offer_desc">
+							<h2>Mikołów, ul Okrzei</h2>
+							<div class="attrs">
+								<span class="price">210 000 zł</span>
+								<span class="dimm">96 m<em>2</em></span>
+								<span class="ground">2187 m<em>2</em></span>
+							</div>
+							<p>3 pokoje, piętro 4 z 4, blok, balkon, piwnica</p>
+							<p>Sed sit amet mattis purus. Donec consectetur sem nibh, vestibulum interdum neque ultrices vel. Morbi vehicula vestibulum quam, a laoreet lectus vehicula eget. Nam vel consectetur augue. Mauris fringilla, nulla vel euismod sodales</p>
+						</div>
+					</div>
+					<!-- /offers -->
+
+
+					<!-- pagination -->
+					<div class="pagination">
+						<ul>
+							<li class="prev"><a href="#"></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next"><a href="#"></a></li>
+						</ul>
+					</div>
+					<!-- /pagination -->
+
+				</div>
+			</div>
+		</section>
+		<!-- Oferty -->
+
+		<footer class="footer">
+			<div class="footer_addresses copy">
+				<div class="wrapper">
+					<div class="grid">
+						<div class="footer_block">
+							<h3 class="header_1">Menu:</h3>
+							<ul class="footer_menu">
+								<li><a href="#">Oferty</a></li>
+								<li><a href="#">Aktualności</a></li>
+								<li><a href="#">Kalkulator opłat</a></li>
+								<li><a href="#">Wycena</a></li>
+								<li><a href="#">Inwestowanie</a></li>
+								<li><a href="#">Kontakt</a></li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Adres:</h3>
+							<div class="mb">
+								<p>ul. Karola Miarki 10 <br>Mikołów</p>
+								<p class="tel">(032) 738 43 43</p>
+							</div>
+							<div class="mb">
+								<h3 class="header_1">Godziny otwarcia</h3>
+								<p class="time">pon - pt: 9:00 - 18:00</p>
+							</div>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Gratisy:</h3>
+							<p>Paczka tapet na pulpit do pobrania na Twój komputer:</p>
+							<ul class="footer_menu">
+								<li>rozmiar 1024x768</li>
+								<li>rozmiar 1280x800</li>
+								<li>rozmiar 1280x1024</li>
+								<li>rozmiar 1600x1024</li>
+								<li>rozmiar 1920x1200</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Biuro obsługi klienta:</h3>
+							<p class="tel">0 81 881 555</p>
+							<p>
+							Infolinia czynna codziennie <br>
+							9:00 - 17:00
+							</p>
+							<p>oraz w pierwszą sobotę miesiąca <br>
+							10:00 - 13:00
+							</p>
+						</div>
+						<div class="footer_block">
+							<h3 class="header_1">Znajdź nas także na:</h3>
+							<div class="socials">
+								<a href="#" class="fb">Facebook</a>
+								<a href="#" class="google-plus">Google plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="wrapper">
+					<p>Copyright &copy; 2014, <span>Mikołów, VAX Nieruchomości </span></p>
+				</div>
+			</div>
+		</footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="assets/js/vendor/jquery.cycle2.min.js"></script>
+        <script src="assets/js/vendor/jquery.selectbox-0.2.min.js"></script>
+        <script src="assets/js/vendor/jquery.uniform.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

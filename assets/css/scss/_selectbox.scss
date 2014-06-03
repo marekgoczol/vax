@@ -4,7 +4,7 @@ $border-color: #cdf2f7;
 .sbHolder{
 	background-color: $background-color;
 	border: solid 1px $border-color;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
 	height: 30px;
 	position: relative;
@@ -31,23 +31,24 @@ $border-color: #cdf2f7;
 	text-decoration: none;
 }
 .sbToggle{
-	background: url(../img/select-icons.png) 0 -116px no-repeat;
+	background: url(../img/icons/ico-drop.png) 0 0 no-repeat;
 	display: block;
-	height: 30px;
+	height: 7px;
 	outline: none;
 	position: absolute;
-	right: 0;
-	top: 0;
-	width: 30px;
+	right: 10px;
+	top: 11px;
+	width: 9px;
+
 }
 .sbToggle:hover{
-	background: url(../img/select-icons.png) 0 -167px no-repeat;
+	// background: url(../img/select-icons.png) 0 -167px no-repeat;
 }
 .sbToggleOpen{
-	background: url(../img/select-icons.png) 0 -16px no-repeat;
+	// background: url(../img/select-icons.png) 0 -16px no-repeat;
 }
 .sbToggleOpen:hover{
-	background: url(../img/select-icons.png) 0 -66px no-repeat;
+	// background: url(../img/select-icons.png) 0 -66px no-repeat;
 }
 .sbHolderDisabled{
 	background-color: #3C3C3C;
