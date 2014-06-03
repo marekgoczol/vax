@@ -48,6 +48,22 @@
 				margin-left: 143px;
 			}
 		}
+		&.right {
+			text-align: right;
+		}
+		&.error {
+			label {
+				color: #a90000 !important
+			}
+			input[type=text] {
+				border-color: #a90000 !important;
+			}
+		}
+		.error-msg {
+			color: #a90000;
+			font-size: 12px;
+			line-height: .9;
+		}
 	}
 	.group {
 		.heading {
@@ -82,7 +98,10 @@
 		.checkbox {
 			display: inline-block;
 			margin-right: 20px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			&.block {
+				display: block;
+			}
 		}
 		label {
 			display: inline-block;
@@ -103,7 +122,7 @@
 		margin-right: 12px;
 		width: 100px;
 		position: relative;
-		vertical-align: middle;
+		vertical-align: top;
 		&.field_wide {
 			width: 130px;
 		}
@@ -144,6 +163,13 @@
 		&.half {
 			display: inline-block;
 			width: 130px;
+			@include box-sizing(border);
+			.sbHolder {
+				width: 100%;
+			}
+		}
+		&.w330 {
+			width: 330px;
 			@include box-sizing(border);
 			.sbHolder {
 				width: 100%;
@@ -195,6 +221,11 @@
 				color: $white;
 				font-size: 12px;
 			}
+		}
+	}
+	&.error {
+		label {
+			color: #a90000 !important
 		}
 	}
 }

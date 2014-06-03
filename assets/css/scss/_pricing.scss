@@ -1,0 +1,58 @@
+.pricing {
+	> .grid {
+		@extend .grid--full;
+	}
+	margin-top: 10px;
+	margin-bottom: 10px;
+	.pricing_content {
+		@extend .grid__item;
+		@extend .tablet--two-fifths;
+		background-color: $light-blue;
+		padding: 20px !important;
+		.pricing_inner {
+			padding-left: 50px;
+			padding-right: 20px;
+		}
+		p {
+			color: $white;
+			line-height: 1.5;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0 0 0 50px;
+			font-size: 35px;
+			color: $white;
+			background: url(../img/icons/ico-price.png) left top no-repeat;
+			min-height: 45px;
+			line-height: 1;
+		}
+
+
+	}
+	.pricing_form {
+		@extend .grid__item;
+		@extend .tablet--three-fifths;
+		background-color: $footer-gray;
+
+		.pricing_form_content {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		p {
+			margin: 0 0 15px;
+			font-size: 14px;
+			color: $white;
+		}
+
+		h2 {
+			margin: 20px 0 8px 0;
+			color: $white;
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+}

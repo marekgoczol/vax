@@ -6,10 +6,8 @@
 	margin-bottom: 10px;
 	.contact_info {
 		@extend .grid__item;
-		@extend .two-fifths;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		padding-left: 20px;
+		@extend .tablet--two-fifths;
+		padding: 20px;
 		min-height: 700px;
 		background-color: $light-blue;
 
@@ -63,6 +61,6 @@
 
 	.map {
 		@extend .grid__item;
-		@extend .three-fifths;
+		@extend .tablet--three-fifths;
 	}
 }

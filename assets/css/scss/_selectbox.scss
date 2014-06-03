@@ -1,6 +1,10 @@
 $background-color: #56d5e4;
 $border-color: #cdf2f7;
 
+$background-color-dark: #696969;
+$border-color-dark: #9a9a9a;
+
+
 .sbHolder{
 	background-color: $background-color;
 	border: solid 1px $border-color;
@@ -9,6 +13,13 @@ $border-color: #cdf2f7;
 	height: 30px;
 	position: relative;
 	width: 100px;
+	.dark_form & {
+		background-color: $background-color-dark;
+		border: solid 1px $border-color-dark;
+	}
+	.error & {
+		border-color: #a90000 !important;
+	}
 }
 .sbHolder:focus .sbSelector{
 
@@ -72,6 +83,10 @@ $border-color: #cdf2f7;
 	width: 200px;
 	z-index: 500;
 	overflow-y: auto;
+	.dark_form & {
+		background-color: $background-color-dark;
+		border: solid 1px $border-color-dark;
+	}
 }
 .sbOptions li{
 	// padding: 0 7px;
@@ -91,6 +106,9 @@ $border-color: #cdf2f7;
 .sbOptions a.sbFocus{
 	color: $white;
 	background-color: #85e1ec;
+	.dark_form & {
+		background-color: #434343;
+	}
 }
 .sbOptions li.last a{
 	border-bottom: none;

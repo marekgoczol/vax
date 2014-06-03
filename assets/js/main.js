@@ -9,7 +9,8 @@ $(function(){
 		DROPDOWN: $('.jsDropdown'),
 		CALC_GRID: $('.jsEqualCalc>div'),
 		COLLAPSABLE_GROUP: $('.jsCollapsable'),
-		CHECKBOX: $('.jsCheckbox')
+		CHECKBOX: $('.jsCheckbox'),
+		PRICING: $('.jsPricing > div')
 	};
 
 	Vax.navigation = function($elem) {
@@ -109,6 +110,9 @@ $(function(){
         }
         if(this.VARS.CHECKBOX.length) {
         	this.checkbox(this.VARS.CHECKBOX);
+        }
+        if(this.VARS.PRICING.length) {
+        	this.equalHeight(this.VARS.PRICING);
         }
 
 	};

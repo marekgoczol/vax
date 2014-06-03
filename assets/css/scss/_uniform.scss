@@ -96,10 +96,15 @@ div.selector {
 
 /* Checkbox */
 div.checker {
-	position: relative; }
+	position: relative;
+}
 	div.checker, div.checker span, div.checker input {
+		cursor: pointer;
 		width: 19px;
 		height: 19px; }
+	label {
+		cursor: pointer;
+	}
 	div.checker span {
 		background-image: url(../img/icons/ico-checkbox.png);
 		background-position: 0 top;
@@ -108,7 +113,9 @@ div.checker {
 		*display: inline;
 		zoom: 1;
 		text-align: center;
-		// background-position: 0 -260px;
+		.dark_form & {
+			background-image: url(../img/icons/ico-checkbox-dark.png);
+		}
 	}
 		div.checker span.checked {
 			background-position: 0 -20px;

@@ -52,7 +52,6 @@
 							<div class="field">
 
 								<div class="field_item no_spacing field_extra_wide">
-
 									<input name="klucz" id="klucz" type="text" placeholder="np. miejscowość, dzielnica, ulica">
 								</div>
 								<div class="dropdown">
@@ -77,7 +76,8 @@
 							<div class="group jsCollapsable">
 								<h3 class="heading">Lokalizacja</h3>
 								<div class="form_items">
-									<div class="field">
+									<!-- error -->
+									<div class="field error">
 										<div class="dropdown full">
 											<label for="wojewodztwo">Województwo</label>
 											<select name="wojewodztwo" id="wojewodztwo" class="jsDropdown">
@@ -86,6 +86,7 @@
 											</select>
 										</div>
 									</div>
+									<!-- error -->
 									<div class="field">
 										<div class="dropdown full">
 											<label for="miejscowosc">Miejscowość</label>
@@ -95,11 +96,12 @@
 											</select>
 										</div>
 									</div>
-									<div class="field">
+									<div class="field error">
 										<label for="dzielnica">Dzielnica</label>
 										<div class="field_item full">
 											<input type="text" name="dzielnica" id="dzielnica">
 										</div>
+										<span class="error-msg">dupa dupa</span>
 									</div>
 									<div class="field">
 										<label for="ulica">Ulica</label>
@@ -160,10 +162,11 @@
 											<input type="text" name="powierzchnia_do" id="powierzchnia_do">
 										</div>
 									</div>
-									<div class="field">
+									<div class="field error">
 										<label for="liczba_pokoi_od">Liczba pokoi</label>
 										<div class="field_item field_wide" data-after="m2">
 											<input type="text" name="liczba_pokoi_od" id="liczba_pokoi_od">
+											<span class="error-msg">Maksymalna liczba pokoi to 5</span>
 										</div>
 										<span class="mid-inputs">do</span>
 										<div class="field_item field_wide" data-after="m2">
